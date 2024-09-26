@@ -1,4 +1,43 @@
+# Task B: Find the Spot #
+# Task: Develop a mapping (walking) application to find a specific set location in a large warehouse store for a customer. The customer can move north, south, east, or west. #
+
+# Hints: Loops, Variables #
+
 # Client Task B #
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+# Will need 3 Variables to track all will need x and y coordinates #
+#   start - used to set starting point #
+#   target - used to set target location #
+#   current - used to set current location #
+# Will also need direction to track what they input for move #
+
+START
+    SET start to (x_start, y_start)
+    SET target to (x_target, y_target)
+    SET current to start
+
+While current != target
+    PRINT "You are at" + current
+    PRINT "Enter direction to move (north, south, east, west): "
+    Input from user = direction
+
+    IF direction = "north"
+        y_current = y_current + 1
+    ELSE if direction = "south"
+        y_current = y_current - 1
+    ELSE if direction = "east"
+        x_current = x_current + 1
+    ELSE if direction = "west"
+        x_current - x_current - 1
+    ELSE
+        PRINT "Invalid direction.  Please enter north, south, east, or west"
+    
+    IF current = target
+        PRINT "Congrats you reached your destination!"
+    ELSE
+        PRINT "You are currently at" + current
+        PRINT "Your target is at" + target
+
+END

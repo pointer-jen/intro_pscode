@@ -1,4 +1,24 @@
+# Task C: Product Package Counter #
+# Task: You need to develop a program that counts the number of items that a hardware device scans to sort for boxing packages into cases. Each package scanned is two (2) products. Each case can only fit 50 product packages. Write a program that prints numbers from 2 to 50, counting by twos. #
+
+# Hint: Loops #
+
 # Client Task C #
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+# Need to have 3 variables #
+#   max which will equal 50 #
+#   increment which will equal 2 #
+#   current which will be the current count #
+
+START
+    Set max = 50
+    Set increment = 2
+    Set current = 0
+
+    While current < max
+        current = current + increment
+        PRINT current
+    
+END
